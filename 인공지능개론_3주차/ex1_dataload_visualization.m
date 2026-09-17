@@ -45,8 +45,8 @@ figure;
 plot(meas(idx1,3),meas(idx1,4),'r.');hold on; %setosa는 빨간색으로
 plot(meas(idx2,3),meas(idx2,4),'go');hold on; %versicolor는 녹색으로
 plot(meas(idx3,3),meas(idx3,4),'bx');hold on; %virginica는 파란색으로
-xlabel('patal length');
-ylabel('patal width');
+xlabel('petal length');
+ylabel('petal width');
 
 %%학습데이터와 평가데이터 나누기
 %두개의 그룹만 먼저 나누기 versicolor vs virginica

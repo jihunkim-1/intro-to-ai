@@ -20,11 +20,11 @@ end
 
 % 사용할 특징은 sepal length와 width =1열과 2열
 tr_id=[71:1:100 121:1:150];
-Training_data=meas(tr_id,:);
+Training_data=meas(tr_id,1:2);
 Training_label=spcs2num(tr_id,:);
 
 ts_id=[51:1:70 101:1:120];
-Test_data=meas(ts_id,:);
+Test_data=meas(ts_id,1:2);
 Test_label=spcs2num(ts_id,:);
 
 %%매트랩 내부 함수를 이용한 KNN모델 만들기(학습,결정해야할 것:k,거리를 어떤 방법으로 할지)
